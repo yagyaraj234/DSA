@@ -1,0 +1,60 @@
+The arrangement and organizing  of the data inside main memory for the efficiently utilization by the application that arrangement is call data Structure.
+
+
+
+
+        Static Vs Dynamic Memory Allocation 
+
+Stack Vs Heap   
+
+
+
+  Stack
+The variable declare in the code or main function the memory will be allocated inside the stack.
+
+The portion of memory allocated to main function in  called activation record of that function.
+
+ 
+        Heap
+
+Heap is used from organized and unorganized memory.
+Heap memory is used as a resource when it is required it used when it not required destroy the memory.
+
+Program cannot directly Access heap memory.We can access heap memory using pointer.
+
+
+Allocation of memory in heap ;
+
+int main(){
+    int *p;
+    p=new int[5];
+}
+
+delete []p; // delete the memory
+p=Null // Deallocation of memory
+
+The above Statement create a memory of an array inside the heap.
+
+
+
+Types of Ds-
+1. Physical Data Structure
+    a). array
+    b). Linked List
+2. Logiacal Data Structure
+    a). Stack    // Lifo - Last in First Out
+    b). Queues   // Fifo - Firat in First Out
+    c). Trees
+    d). Graph
+    e). Hash Table
+
+  *  Stack and Queues are linear Data Structure
+  *  Trees and Graph are Non-linear Data Structure
+  *  Hash Table is a tabular Data Structure
+
+
+
+Abstract DataType (ADT)
+
+1. represtation of data.
+2. operations on data.
