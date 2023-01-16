@@ -9,7 +9,7 @@ void display(int *a,int s){
     cout<<endl<<endl;
 }
 int main(){
-    int size =6;
+    int size =8;
     int arr[size]={4,52,6,2,4};
 
     display(arr,size);
