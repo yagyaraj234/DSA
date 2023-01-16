@@ -32,5 +32,9 @@ int main(){
     display(a,7);
    cout<< binarySearch(a,7,123);
 
+
+
+
+
 return 0;
 }
