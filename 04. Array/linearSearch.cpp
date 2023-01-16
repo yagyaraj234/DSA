@@ -5,6 +5,7 @@ void display(int *a,int s){
     for(int i=0;i<s;i++){
         cout<<a[i]<<" ";
     }
+
     cout<<endl<<endl;
 }
 void input(int *a,int size){
@@ -13,13 +14,16 @@ void input(int *a,int size){
     {
         cin>>a[i];
     }
+    
 }
 
 int linearSearch(int *a,int s,int value){
     for (int i = 0; i < s; i++)
     {
         if(a[i]==value)
-          return i;      
+          return i;
+        
+        
     }
     
 }
