@@ -2,17 +2,22 @@
 using namespace std;
 
 int main(){
-    string s="python";
+    char s[]="python";
+    int i,j;
+    char m[7];
+    cout<<s<<endl;
 
-    for (int i = 0; s[i]=='\0'; i++)
+    for (i = 0; s[i]!='\0'; i++)
     {
-        for (int j =; j < s.length(); j++)
-        {
-            /* code */
-        }
-        
     }
-    
+
+    i=i-1;
+    for (j = 0; i>=0; i--, j++)
+    {
+        m[j]=s[i];
+    }
+    m[j]='\0';
+    cout<<m<<endl;
 
 return 0;
 }
