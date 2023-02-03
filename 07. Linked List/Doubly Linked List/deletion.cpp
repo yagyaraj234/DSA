@@ -107,10 +107,13 @@ int main()
 
 
     display(head);
+    cout<<"Deletion from End"<<endl;
     deleteFromEnd(head);
     display(head);
+    cout<<"Deletion from Start"<<endl;
     deleteFromStart(head);
     display(head);
+    cout<<"Deletion from Mid"<<endl;
     deleteFromMid(head,2);
     display(head);
 

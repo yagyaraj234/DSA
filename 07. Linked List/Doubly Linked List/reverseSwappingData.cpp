@@ -19,13 +19,11 @@ public:
 // Traversing The linked List and print data of the node
 void display(node *&head)
 {
-    int i=0;
     node *temp = head;
     while (temp != NULL)
     {
-        cout <<i<<" "<< temp->data << " ";
+        cout << temp->data << " ";
         temp = temp->next;
-        i++;
     }
     cout << endl;
 }
@@ -61,23 +59,25 @@ void insertAtMid(node *&head, int d, int pos)
 
 void reverse(node* &head){
     node* temp = NULL;
-    node* current = head;
-    while (current!=NULL)
+    node *current = head;
+    node *curr = head;
+    
+    int a[100000];
+    int i=0;
+    while (current)
     {
-        cout<<"hehe"<<" ";
-        temp=current->prev;
-        current->prev=current->next;
-        current->next=temp;
-        current=current->prev;
-
-        if(current->next==NULL){
-            head=current;
-            return ;
-        }
-
+        a[i]=current->data;
+        i++;
+        current=current->next;
+    }
+    i=i-1;
+    while (i>=0)
+    {
+        curr->data=a[i];
+        curr=curr->next;
+        i--;
     }
 
-    
 }
 int main()
 {

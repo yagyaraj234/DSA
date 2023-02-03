@@ -29,7 +29,7 @@ int main(){
     node* tail=temp;
 
     insertAtTail(tail,65);
-    cout<<temp->data<<endl;
+    cout<<temp->next->data<<endl;
     // cout<<tempdata->data<<endl;
 return 0;
 }
