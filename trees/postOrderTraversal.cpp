@@ -34,32 +34,16 @@ node* buildTree(node* root){
 }
 
 // Level Order Traversal
-void levelOrderTraversal(node* root){
-    queue<node*> q;
-    q.push(root);
-    q.push(NULL);
-    while(!q.empty()){
-        node* temp = q.front();
-        q.pop();
-
-        if(temp == NULL){ // Purana level complete ho chuka haii
-            cout<<endl;
-            if(!q.empty()){
-                q.push(NULL);
-            }
-        }
-        else{
-        cout<<temp->data<<" ";
-             if(temp->left){
-            q.push(temp->left);
-        }
-        if(temp->right){
-            q.push(temp->right);
-        }
-        }
-
-       
+void postOrderTraversal(node* root){
+    
+    
+    if (root == NULL){
+        return ;
     }
+
+    postOrderTraversal(root->left);
+    postOrderTraversal(root->right);
+    cout<<root->data<<" ";
 }
 int main(){
     node* root=NULL;
@@ -69,8 +53,8 @@ int main(){
     
     // Level order traversel(root);
 
-    cout<<"Printing Pre order traversal"<<endl;
-    levelOrderTraversal(root);
+    cout<<"Printing Post order traversal"<<endl;
+    postOrderTraversal(root);
 
 return 0;
 }
